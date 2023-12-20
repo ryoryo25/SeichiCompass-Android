@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/SeichiSelectFragment">
+
+    <fragment
+        android:id="@+id/SeichiSelectFragment"
+        android:name="com.ryoryo.seichicompass.SeichiSelectFragment"
+        android:label="@string/seichi_select_fragment_label"
+        tools:layout="@layout/fragment_seichi_select"/>
+    <fragment
+        android:id="@+id/CategorySelectFragment"
+        android:name="com.ryoryo.seichicompass.CategorySelectFragment"
+        android:label="@string/category_select_fragment_label"
+        tools:layout="@layout/fragment_category_select"/>
+</navigation>

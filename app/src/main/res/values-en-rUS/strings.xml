@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SeichiCompass</string>
+    <string name="to_seichi_label">To the Seichi</string>
+    <string name="info_source_label">References</string>
+    <string name="description_label">Description of the Seichi</string>
+    <string name="force_complete">Found the Seichi!</string>
+</resources>
