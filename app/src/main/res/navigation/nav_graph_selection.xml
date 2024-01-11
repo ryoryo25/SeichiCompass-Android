@@ -2,17 +2,55 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph2"
+    android:id="@+id/nav_graph_select"
     app:startDestination="@id/SeichiSelectFragment">
 
     <fragment
         android:id="@+id/SeichiSelectFragment"
-        android:name="com.ryoryo.seichicompass.SeichiSelectFragment"
+        android:name="com.ryoryo.seichicompass.fragment.SeichiSelectFragment"
         android:label="@string/seichi_select_fragment_label"
-        tools:layout="@layout/fragment_seichi_select"/>
+        tools:layout="@layout/fragment_seichi_select">
+        <action
+            android:id="@+id/action_SeichiSelect_to_Compass"
+            app:destination="@id/nav_graph_compass" />
+        <action
+            android:id="@+id/action_SeichiSelect_to_Add"
+            app:destination="@id/seichiAddInstructionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/CategorySelectFragment"
-        android:name="com.ryoryo.seichicompass.CategorySelectFragment"
+        android:name="com.ryoryo.seichicompass.fragment.CategorySelectFragment"
         android:label="@string/category_select_fragment_label"
         tools:layout="@layout/fragment_category_select"/>
+    <navigation android:id="@+id/nav_graph_compass"
+        app:startDestination="@id/CompassFragment">
+        <fragment
+            android:id="@+id/CompassFragment"
+            android:name="com.ryoryo.seichicompass.fragment.CompassFragment"
+            android:label="fragment_compass"
+            tools:layout="@layout/fragment_compass">
+            <action
+                android:id="@+id/action_Compass_to_SeichiComplete"
+                app:destination="@id/SeichiCompleteFragment"
+                app:popUpTo="@id/SeichiSelectFragment" />
+            <argument
+                android:name="seichiInfo" />
+        </fragment>
+        <fragment
+            android:id="@+id/SeichiCompleteFragment"
+            android:name="com.ryoryo.seichicompass.fragment.SeichiCompleteFragment"
+            android:label="fragment_seichi_complete"
+            tools:layout="@layout/fragment_seichi_complete" >
+            <argument
+                android:name="seichiInfo" />
+            <action
+                android:id="@+id/action_Another_Explore"
+                app:destination="@id/CompassFragment" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/seichiAddInstructionFragment"
+        android:name="com.ryoryo.seichicompass.fragment.SeichiAddInstructionFragment"
+        android:label="fragment_seichi_add_instruction"
+        tools:layout="@layout/fragment_seichi_add_instruction" />
 </navigation>

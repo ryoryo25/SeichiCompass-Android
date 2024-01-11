@@ -4,6 +4,13 @@ import android.os.Bundle
 import com.ryoryo.seichicompass.lib.Constants
 
 object SeichiInfoHelper {
+
+    const val BUNDLE_SEICHI_INFO = "com.ryoryo.seichicompass.SeichiInfo"
+
+    val DEFAULT_VALUE = SeichiInfo(
+        -1, "N/A", "N/A", "N/A", Coordinate(0.0, 0.0)
+    )
+
     fun bundleToSeichiInfo(bundle: Bundle?): SeichiInfo {
         if (bundle != null) {
             return SeichiInfo(
@@ -17,7 +24,7 @@ object SeichiInfoHelper {
                 )
             )
         }
-        return Constants.DEFAULT_SEICHI_INFO
+        return DEFAULT_VALUE
     }
 
     fun seichiInfoToBundle(seichiInfo: SeichiInfo): Bundle {

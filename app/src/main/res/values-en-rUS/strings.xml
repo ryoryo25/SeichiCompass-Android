@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SeichiCompass</string>
-    <string name="to_seichi_label">To the Seichi</string>
-    <string name="info_source_label">References</string>
-    <string name="description_label">Description of the Seichi</string>
+    <string name="label_to_seichi">To the Seichi</string>
+    <string name="label_info_source">References</string>
+    <string name="label_description">Description of the Seichi</string>
     <string name="force_complete">Found the Seichi!</string>
+    <string name="rationale_location">Location information is required to use this app</string>
+    <string name="unable_to_activate_app">Unable to activate this app due to no permission for location access</string>
+    <string name="label_register_seichi">Register a Seichi</string>
+    <string name="label_input_title">Input the title of the Seichi</string>
+    <string name="label_input_description">Input description</string>
+    <string name="label_input_info_source">Input references</string>
+    <string name="label_input_coordinate">Selected URL of the location</string>
+    <string name="label_button_register_seichi">Register the Seichi</string>
+    <string name="alert_invalid_coordinate_url">Selected URL is invalid</string>
+    <string name="hint_input_title">Title</string>
+    <string name="hint_input_description">Description of the Seichi</string>
+    <string name="hint_input_info_source">Example: https://youtu.be/...</string>
+    <string name="label_button_open_map">Open map app</string>
 </resources>

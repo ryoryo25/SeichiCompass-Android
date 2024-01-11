@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SeichiCompass</string>
+    <string name="app_name">聖地コンパス</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="compass_fragment_label">Compass Fragment</string>
@@ -44,15 +44,29 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 
-    <string name="compass_image_alt">Compass</string>
-    <string name="to_seichi_label">聖地まで</string>
+    <string name="compass_image_alt" translatable="false">Compass</string>
+    <string name="label_to_seichi">聖地まで</string>
     <string name="seichi_distance" translatable="false">%1$s m</string>
 
-    <string name="description_label">聖地の説明</string>
-    <string name="info_source_label">参考URL等</string>
+    <string name="label_description">聖地の説明</string>
+    <string name="label_info_source">参考URL等</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="category_select_fragment_label">Category Select Fragment</string>
     <string name="seichi_select_fragment_label">Seichi Select Fragment</string>
     <string name="force_complete">聖地を発見！</string>
+    <string name="rationale_location">アプリを使うには位置情報を許可する必要があります</string>
+    <string name="unable_to_activate_app">位置情報がないとアプリを実行できません</string>
+    <string name="label_register_seichi">聖地を登録</string>
+    <string name="label_input_title">聖地のタイトルを入力</string>
+    <string name="label_input_description">聖地の説明を入力</string>
+    <string name="label_input_info_source">参考URLなどを入力</string>
+    <string name="label_input_coordinate">選択された地点のURL</string>
+    <string name="label_button_register_seichi">聖地を登録</string>
+    <string name="alert_invalid_coordinate_url">選択されたURLは無効なURLです</string>
+    <string name="hint_input_title">タイトル</string>
+    <string name="hint_input_description">聖地の説明</string>
+    <string name="hint_input_info_source">例: https://youtu.be/...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="label_button_open_map">Mapアプリを開く</string>
 </resources>

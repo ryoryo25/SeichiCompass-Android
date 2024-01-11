@@ -1,13 +1,11 @@
 package com.ryoryo.seichicompass.model
 
-import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class SeichiInfo(
-    val id: Int,
+data class NewSeichiInfo(
     val title: String,
     val description: String,
     val infoSource: String,
-    val coordinate: Coordinate
+    val coordinateUrl: String
 )
